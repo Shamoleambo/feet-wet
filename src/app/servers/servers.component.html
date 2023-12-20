@@ -6,7 +6,8 @@
 >
   Add Server
 </button>
-<p>{{ newServerStatus }}</p>
+<!-- <p>{{ newServerStatus }}</p> -->
+<p *ngIf="serverCreated">Server was created. Server name: {{serverName}}</p>
 <app-server></app-server>
 <app-server></app-server>
 <app-server></app-server>
